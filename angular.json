@@ -423,6 +423,39 @@
           }
         }
       }
+    },
+    "ai7-full-screen-view": {
+      "projectType": "library",
+      "root": "projects/ai7-full-screen-view",
+      "sourceRoot": "projects/ai7-full-screen-view/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ai7-full-screen-view/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ai7-full-screen-view/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ai7-full-screen-view/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/ai7-full-screen-view/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
     }
   }
 }

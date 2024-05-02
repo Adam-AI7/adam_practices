@@ -8,6 +8,9 @@
     "strict": true,
     "noImplicitOverride": true,
     "paths": {
+      "ai7-full-screen-view": [
+        "dist/ai7-full-screen-view"
+      ],
       "form-builder": [
         "dist/form-builder"
       ]
